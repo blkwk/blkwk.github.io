@@ -1,25 +1,25 @@
 body {
-	margin: 100px 0 0 0;
+	margin: 100px 30px;
 	padding: 0;
-	background: #222;
+	background: #000;
 }
 #container {
 	position: relative;
-	width: 320px;
+	width: 483px;
 	margin: 0 auto;
 	text-align: center;
 }
 #logo {
-	width: 320px;
-	height: 320px;
+	width: 483px;
+	height: 170px;
 	margin: 0 auto;
-	background: url('../images/blkwk_logo_alt.png') no-repeat top center;
+	background: url('../images/blkwk_logo_type.png') no-repeat top center;
 }
 #logo span {
 	display: none;
 }
 #contact {
-margin-top: 30px;
+	margin-top: 30px;
 }
 #contact a {
 	background: #393939;
