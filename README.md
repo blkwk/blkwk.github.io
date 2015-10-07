@@ -7,11 +7,11 @@ This project is setup to use a Jekyll/Gulp/SaSS/BrowserSync workflow
 
 ## System Preparation
 
-To use this project, you'll need the following things installed on your machine:
+To use this project, you'll need the following things installed on your machine:<br />
 (assuming that you're already using [Homebrew](http://brew.sh/) on your local dev machine)
 
 1. [Jekyll](http://jekyllrb.com/) - `$ gem install jekyll`
-2. [NodeJS](http://nodejs.org) - `$ brew install nodejs` (or use the installer if not running on OSX)
+2. [NodeJS](http://nodejs.org) - `$ brew install node` (or use the installer if not running on OSX)
 3. [GulpJS](https://github.com/gulpjs/gulp) - `$ npm install -g gulp` (may need sudo)
 
 ## Local Installation
@@ -21,7 +21,7 @@ To use this project, you'll need the following things installed on your machine:
 
 ## Usage
 
-**development mode**
+**Development mode**
 
 This will give you file watching, browser synchronisation, auto-rebuild, CSS injecting into your site.
 
@@ -29,10 +29,10 @@ This will give you file watching, browser synchronisation, auto-rebuild, CSS inj
 $ gulp
 ```
 
-**jekyll**
+**Jekyll**
 
 As this is just a Jekyll project, you can use any of the commands listed in their [docs](http://jekyllrb.com/docs/usage/)
 
-## Deployments with Gulp
+## Deploying with Gulp
 
 TODO
