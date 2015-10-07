@@ -1,4 +1,4 @@
-name: Jekyll Pure
+name: Jekyll/Gulp starter
 markdown: redcarpet
 highlighter: pygments # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]

@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "PureCSS Kitchen Sink"
-subtitle: "Subtitle goes here"
-date:   2015-04-11 09:11:03
-categories: jekyll update
+title:  "PureCSS Kitchen Sink" # title in quotes
+subtitle: "Subtitle goes here"  # remove this line to have no subtitle
+date:   2015-04-11 09:11:03  # formatted in YYYY-MM-DD HH:MM:SS
+categories: posts update # your category for the post
 ---
 
-This is a kitchen sink demo of every feature in this theme.
+You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
+To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
 
 Jekyll also offers powerful support for code snippets:
 

@@ -1,0 +1,17 @@
+---
+layout: default
+title: Posts
+#subtitle: Info on how to get started
+---
+
+<div class="content">
+    <div id="home">
+      <h2 class="content-subhead">Blog Posts</h2>
+      <ul class="posts">
+        {% for post in site.posts %}
+          <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+</div>

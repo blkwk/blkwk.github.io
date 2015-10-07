@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-subtitle: "Subtitle goes here"
-date:   2014-04-20 09:11:03
-categories: jekyll update
+title:  "Welcome to Jekyll!" # title in quotes
+subtitle: "Subtitle goes here"  # remove this line to have no subtitle
+date:   2014-04-20 09:11:03  # formatted in YYYY-MM-DD HH:MM:SS
+categories: posts update # your category for the post
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
