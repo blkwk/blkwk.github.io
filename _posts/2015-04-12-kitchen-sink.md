@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "PureCSS Kitchen Sink"
+subtitle: "Subtitle goes here"
 date:   2015-04-11 09:11:03
 categories: jekyll update
 ---

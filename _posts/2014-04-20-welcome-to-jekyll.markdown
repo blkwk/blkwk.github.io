@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+subtitle: "Subtitle goes here"
 date:   2014-04-20 09:11:03
 categories: jekyll update
 ---

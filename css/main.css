@@ -441,16 +441,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
   #layout.active .menu-link {
     left: 250px; } }
 
-@media (max-width: 48em) {
-  /* Only apply this when the window is small. Otherwise, the following
-    case results in extra padding on the left:
-        * Make the window small.
-        * Tap the menu to trigger the active state.
-        * Make the window large again.
-    */
-  #layout.active {
-    position: relative;
-    left: 250px; } }
+@media (max-width: 48em) { }
 
 body {
   background: white; }
@@ -458,5 +449,4 @@ body {
 .highlight {
   margin: 0 auto;
   padding: 3px 20px;
-  width: 800px;
   background: #B1C4FA; }
