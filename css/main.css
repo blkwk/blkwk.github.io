@@ -256,6 +256,17 @@
   max-width: 100%;
   height: auto; }
 
+.pure-menu-logo {
+  float: left;
+  margin-left: 50px; }
+  .pure-menu-logo a {
+    display: block;
+    height: auto; }
+
+.pure-menu-list {
+  float: right;
+  margin-right: 50px; }
+
 /*
 Add transition to containers so they can push in and out.
 */
@@ -269,13 +280,6 @@ This is the parent `<div>` that contains the menu and the content area.
 #layout {
   position: relative;
   padding-left: 0; }
-
-#layout.active #menu {
-  left: 250px;
-  width: 250px; }
-
-#layout.active .menu-link {
-  left: 250px; }
 
 /*
 The content `<div>` is where all your content goes.
@@ -315,18 +319,12 @@ The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
 appears on the left side of the page.
 */
 #menu {
-  margin-left: -250px;
-  /* "#menu" width */
-  width: 250px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 1000;
-  /* so the menu or its navicon stays above all content */
-  background: #191818;
+  width: 100%;
+  position: relative;
+  background: #f5f5f5;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  text-align: center; }
 
 /*
     All anchors inside the menu should be styled like this.
@@ -334,7 +332,7 @@ appears on the left side of the page.
 #menu a {
   color: #999;
   border: none;
-  padding: 0.6em 0 0.6em 0.6em; }
+  padding: 1em; }
 
 /*
     Remove all background/borders, since we are applying them to #menu.
@@ -420,6 +418,10 @@ small screens.
 .menu-link span:after {
   margin-top: 0.6em; }
 
+.pure-menu-selected {
+  color: #ff0000;
+  background-color: #000; }
+
 /* -- Responsive Styles (Media Queries) ------------------------------------- */
 /*
 Hides the menu at `48em`, but modify this based on your app's needs.
@@ -428,12 +430,6 @@ Hides the menu at `48em`, but modify this based on your app's needs.
   .header, .content {
     padding-left: 2em;
     padding-right: 2em; }
-  #layout {
-    padding-left: 250px;
-    /* left col width "#menu" */
-    left: 0; }
-  #menu {
-    left: 250px; }
   .menu-link {
     position: fixed;
     left: 250px;
