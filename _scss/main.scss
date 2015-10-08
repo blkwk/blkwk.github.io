@@ -1,4 +1,4 @@
-// @import "reset";
+@import "reset";
 @import "syntax";
 //@import "side-menu.scss";
 @import "top-menu.scss";
@@ -6,6 +6,22 @@
 body {
     background: white;
 }
+
+a {
+  color: #be1e2d;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+
+  &:hover {
+    color: #000;
+  }
+
+}
+
 
 .highlight {
   margin: 0 auto;
