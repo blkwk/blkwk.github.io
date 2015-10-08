@@ -67,7 +67,31 @@ The content `<div>` is where all your content goes.
     color: #888;
 }
 
+.pure-menu-logo {
 
+  a img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: .6em 0;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+
+  a:hover img {
+    opacity: .5;
+  }
+}
+
+.pure-menu-item {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
 
 /*
 The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
@@ -82,7 +106,7 @@ appears on the left side of the page.
     left: 0;
     bottom: 0;
     z-index: 1000; /* so the menu or its navicon stays above all content */
-    background: #191818;
+    background: #f5f5f5;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
@@ -92,7 +116,7 @@ appears on the left side of the page.
     #menu a {
         color: #999;
         border: none;
-        padding: 0.6em 0 0.6em 0.6em;
+        padding: 1em 2em;
     }
 
     /*
@@ -109,14 +133,16 @@ appears on the left side of the page.
     */
     #menu .pure-menu ul,
     #menu .pure-menu .menu-item-divided {
-        border-top: 1px solid #333;
+        border-top: 1px solid #e5e5e5;
+        padding-top: 1em;
     }
         /*
         Change color of the anchor links on hover/focus.
         */
         #menu .pure-menu li a:hover,
         #menu .pure-menu li a:focus {
-            background: #333;
+          background: #eaeaea;
+          color: #000;
         }
 
     /*

@@ -698,19 +698,6 @@ appears on the left side of the page.
   float: right;
   margin-right: 50px; }
 
-.lrgimg {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto; }
-
-ul {
-  padding: 0;
-  margin: 0; }
-  ul li {
-    margin: 0 0 0 1.3em;
-    padding: 0; }
-
 /* -- Responsive Styles (Media Queries) ------------------------------------- */
 /*
 Hides the menu at `48em`, but modify this based on your app's needs.
@@ -780,4 +767,34 @@ a {
 .highlight {
   margin: 0 auto;
   padding: 3px 20px;
-  background: #B1C4FA; }
+  background: #f5f5f5;
+  border: 1px solid #eee; }
+
+.lrgimg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+  ul li {
+    margin: 0 0 0 1.3em;
+    padding: 0; }
+
+.meta {
+  color: #ccc;
+  margin: 3em 0 1.5em 0; }
+
+.mb50 {
+  margin-bottom: 50px; }
+
+.mt50 {
+  margin-top: 50px; }
+
+.pure-g > div {
+  box-sizing: border-box; }
+
+.l-box {
+  padding: 0.25em; }
