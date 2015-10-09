@@ -317,6 +317,7 @@ table {
 td, th {
   padding: 0; }
 
+/* normalize css */
 .highlight {
   background: #ffffff; }
 
@@ -571,23 +572,18 @@ td, th {
   color: #009999; }
 
 /* Literal.Number.Integer.Long */
-/*
-Add transition to containers so they can push in and out.
-*/
+/* code syntax css */
+/* add transition to containers so they can push in and out. */
 #layout, #menu, .menu-link {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out; }
 
-/*
-This is the parent `<div>` that contains the menu and the content area.
-*/
+/* This is the parent <div> that contains the menu and the content area. */
 #layout {
   position: relative;
   padding-left: 0; }
 
-/*
-The content `<div>` is where all your content goes.
-*/
+/* The content <div> is where all your content goes. */
 .content {
   margin: 0 auto;
   padding: 0 2em;
@@ -601,27 +597,23 @@ The content `<div>` is where all your content goes.
   text-align: center;
   padding: 2.5em 2em 0;
   border-bottom: 1px solid #eee; }
-
-.header h1 {
-  margin: 0.2em 0;
-  font-size: 3em;
-  font-weight: 700; }
-
-.header h2 {
-  font-weight: 300;
-  color: #ccc;
-  padding: 0;
-  margin-top: 0; }
+  .header h1 {
+    margin: 0.2em 0;
+    font-size: 3em;
+    font-weight: 700; }
+  .header h2 {
+    font-weight: 300;
+    color: #ccc;
+    padding: 0;
+    margin-top: 0; }
 
 .content-subhead {
   margin: 50px 0 20px 0;
   font-weight: 300;
   color: #888; }
 
-/*
-The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
-appears on the left side of the page.
-*/
+/* The #menu <div> is the parent <div> that contains the .pure-menu */
+/* that appears on the left side of the page */
 #menu {
   width: 100%;
   position: relative;
@@ -632,16 +624,12 @@ appears on the left side of the page.
   z-index: 1000;
   /* so the menu or its navicon stays above all content */ }
 
-/*
-    Remove all background/borders, since we are applying them to #menu.
-    */
+/* Remove all background/borders, since we are applying them to #menu */
 #menu .pure-menu, #menu .pure-menu ul {
   border: none;
   background: transparent; }
 
-/*
-    Add that light border to separate items into groups.
-    */
+/* Add that light border to separate items into groups. */
 #menu .pure-menu ul, #menu .pure-menu .menu-item-divided {
   border-top: 1px solid #333; }
 
@@ -656,30 +644,21 @@ appears on the left side of the page.
   background: #eaeaea;
   color: #000; }
 
-/*
-    This styles the selected menu item `<li>`.
-    */
+/* This styles the selected menu item <li> */
 #menu .pure-menu-selected, #menu .pure-menu-heading {
-  background: #1f8dd6; }
+  background: #be1e2d; }
 
-/*
-        This styles a link within a selected menu item `<li>`.
-        */
+/* This styles a link within a selected menu item <li> */
 #menu .pure-menu-selected a {
   color: #fff; }
 
-/*
-    This styles the menu heading.
-    */
+/* This styles the menu heading */
 #menu .pure-menu-heading {
   font-size: 110%;
   color: #fff;
   margin: 0; }
 
-.pure-img-responsive {
-  max-width: 100%;
-  height: auto; }
-
+/* This styles the logo in the top menu */
 .pure-menu-logo {
   float: left;
   margin-left: 50px; }
@@ -688,38 +667,24 @@ appears on the left side of the page.
     width: 38px;
     height: 38px;
     margin: 0;
-    padding: 0.6em 0;
+    padding: 0.7em 0;
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out; }
   .pure-menu-logo a:hover img {
     opacity: 0.5; }
 
+/* This styles the nav in the top menu */
 .pure-menu-list {
   float: right;
   margin-right: 50px; }
 
 /* -- Responsive Styles (Media Queries) ------------------------------------- */
-/*
-Hides the menu at `48em`, but modify this based on your app's needs.
-*/
 @media (min-width: 48em) {
   .header, .content {
     padding-left: 2em;
-    padding-right: 2em; }
-  .menu-link {
-    position: fixed;
-    left: 250px;
-    display: none; }
-  #layout.active .menu-link {
-    left: 250px; } }
+    padding-right: 2em; } }
 
 @media (max-width: 48em) {
-  /* Only apply this when the window is small. Otherwise, the following
-    case results in extra padding on the left:
-        * Make the window small.
-        * Tap the menu to trigger the active state.
-        * Make the window large again.
-    */
   #menu {
     background: #fff; }
   .pure-menu-logo, .pure-menu-list {
@@ -753,12 +718,14 @@ Hides the menu at `48em`, but modify this based on your app's needs.
   .header, .content {
     font-size: 85%; } }
 
+/* top menu layout css */
 body, .pure-g [class*="pure-u"] {
   font-family: 'Open Sans', sans-serif; }
 
 body {
   background: white; }
 
+/* link styles */
 a {
   color: #be1e2d;
   -webkit-transition: all 0.2s ease-out;
@@ -767,18 +734,27 @@ a {
   a:hover {
     color: #000; }
 
+/* code highlight background */
 .highlight {
   margin: 0 auto;
   padding: 3px 20px;
   background: #f5f5f5;
   border: 1px solid #eee; }
 
+/* responsive pure images */
+.pure-img-responsive {
+  max-width: 100%;
+  height: auto; }
+
+/* break an image out of the constrained layout */
+/* use this outside of a <div> that has the .content class */
 .lrgimg {
   display: block;
   max-width: 100%;
   height: auto;
   margin: 0 auto; }
 
+/* remove margins and padding on ul/li items */
 ul {
   padding: 0;
   margin: 0; }
@@ -786,16 +762,21 @@ ul {
     margin: 0 0 0 1.3em;
     padding: 0; }
 
+/* spacing for the meta box on posts - date */
 .meta {
   color: #ccc;
   margin: 3em 0 1.5em 0; }
 
+/* bottom margins */
 .mb50 {
   margin-bottom: 50px; }
 
+/* top margins */
 .mt50 {
   margin-top: 50px; }
 
+/* adds padding for responsive pure divs with ".l-box" added */
+/* see http://purecss.io/grids/#applying-padding-and-borders-to-grid-units */
 .pure-g > div {
   box-sizing: border-box; }
 
