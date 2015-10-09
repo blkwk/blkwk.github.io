@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="/lib/pure/pure.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+      <div id="layout">
+          <a href="#menu" id="menuLink" class="menu-link">
+              <span></span>
+          </a>
+
+          {% include menu_top.html %}
+
+          <div id="main">
+              <div class="header">
+                  <h1>{{page.title}}</h1>
+                  <h2>{{page.subtitle}}</h2>
+              </div>
+
+              {{ content }}
+          </div>
+      </div>
+      <script src="/js/main.js"></script>
+    </body>
+</html>
