@@ -3,8 +3,11 @@
 @import "top-menu.scss";
 //@import "side-menu.scss";
 
-body {
+body, .pure-g [class *= "pure-u"]  {
   font-family: 'Open Sans', sans-serif;
+}
+
+body {
   background: white;
 }
 

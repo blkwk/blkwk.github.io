@@ -753,8 +753,10 @@ Hides the menu at `48em`, but modify this based on your app's needs.
   .header, .content {
     font-size: 85%; } }
 
+body, .pure-g [class*="pure-u"] {
+  font-family: 'Open Sans', sans-serif; }
+
 body {
-  font-family: 'Open Sans', sans-serif;
   background: white; }
 
 a {
