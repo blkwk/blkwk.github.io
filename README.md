@@ -33,7 +33,7 @@ $ gulp
 
 As this is just a Jekyll project, you can use any of the commands listed in their [docs](http://jekyllrb.com/docs/usage/)
 
-<hr style="margin: 35px 0;"/>
+<hr style="margin: 35px 0; height: 1px;"/>
 
 ## Deploying with Gulp
 
